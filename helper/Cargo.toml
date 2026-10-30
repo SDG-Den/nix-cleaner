@@ -1,0 +1,16 @@
+[package]
+name = "nix-cleaner-helper"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+engine.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+libc = "0.2"
+
+[[bin]]
+name = "nix-cleaner-helper"
+path = "src/main.rs"
